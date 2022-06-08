@@ -1,13 +1,17 @@
 <svg>
   <rect id="background" >
 
-  <text id="time" fill="fb-blue" x="50%" y="50%" 
+  <text id="clock-label" fill="fb-blue" x="50%" y="50%" 
     font-size="80" font-family="System-Regular" 
     text-anchor="middle" >XX:XXx</text>
 
   <text id="date" fill="fb-light-gray" x="50%" y="80%" 
     font-size="50" font-family="System-Regular" 
-    text-anchor="middle" >xxx 99</text>
+    text-anchor="right" >xxx 99</text>
+
+      <text id="day" fill="green" x="50%" y="90%" 
+    font-size="50" font-family="System-Regular" 
+    text-anchor="middle" text-length="32" >xxxxxx</text>
 
   </rect>
 </svg>
