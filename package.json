@@ -1,0 +1,33 @@
+{
+  "name": "one.0",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "fitbit-sdk-types": "^7.0.5"
+  },
+  "fitbit": {
+    "appUUID": "bebd85aa-c925-4171-ae56-2dd890f073a7",
+    "appType": "clockface",
+    "appDisplayName": "OnePoint0",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit",
+    "lint": "eslint . --ext .ts"
+  }
+}
