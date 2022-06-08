@@ -16,16 +16,6 @@ export class DateDisplay {
     'DEC',
   ];
 
-  private days = [
-    'Monday',
-    'Tuesday',
-    'Wed',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday',
-  ];
-
   public dateCallback: (text: string) => void;
 
   constructor() {
@@ -38,9 +28,8 @@ export class DateDisplay {
     const currDate = new Date();
     const day = currDate.getDate();
     const month = currDate.getMonth();
-    const dayOfTheWeek = currDate.getDay();
 
-    const date = `${this.months[month]} ${day} ${this.days[dayOfTheWeek]}`;
+    const date = `${this.months[month]} ${day}`;
 
     this.dateCallback(date);
   };
